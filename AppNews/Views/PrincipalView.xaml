@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNews.Views.PrincipalView"
+             Title="PrincipalView">
+
+
+
+    <Grid BackgroundColor="#2d5e4c">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Margin="30" TextColor="White" CharacterSpacing="5" FontFamily="NewsFont" FontSize="30" >ULTIMAS NOTICIAS</Label>
+
+        <ScrollView Grid.Row="1" >
+
+            <Border Margin="10" BackgroundColor="Transparent" StrokeThickness="1" >
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Resources/Images/nota.jpg" HeightRequest="90"></Image>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="AUTO"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Margin="9" TextColor="White" FontFamily="NewsFont" FontSize="16">ELECIONES ELECTORALES EN COAHUILA 2023</Label>
+                        <Label Grid.Row="1" Margin="9" TextColor="White">El domingo 4 de junio se llevaron a cabo las elecciones Coahuila 2023</Label>
+                    </Grid>
+                    
+                    
+
+                </Grid>
+                
+            </Border>
+
+        </ScrollView>
+        
+        
+        
+        
+        
+        
+        
+        
+    </Grid> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</ContentPage>
