@@ -1,5 +1,5 @@
 ﻿namespace AppNews;
-using AppNews.Views;
+using AppNews.Views.Administrador;
 
 public partial class App : Application
 {
@@ -7,6 +7,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new PrincipalView();
+		MainPage = new PrincipalViewAD();
 	}
 }

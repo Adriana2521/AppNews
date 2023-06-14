@@ -34,8 +34,8 @@
                 <Label Grid.Row="1" HorizontalTextAlignment="Center" Margin="10" FontSize="15" CharacterSpacing="5">Login</Label>
 
                 <StackLayout Grid.Row="3" Orientation="Horizontal" >
-                    <Frame ZIndex="1" HasShadow="True" HeightRequest="55" WidthRequest="56" CornerRadius="26"  >
-                        <Image Source="/Resources/Images/usuario.png" HeightRequest="70" WidthRequest="53"></Image>
+                    <Frame ZIndex="1" HasShadow="True" HeightRequest="55" WidthRequest="55" CornerRadius="26" BackgroundColor="#2d5e4c"  >
+                        <Image Source="/Resources/Images/porfile.png" HeightRequest="73" WidthRequest="53"></Image>
                     </Frame>
                     <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="5" HorizontalOptions="FillAndExpand" HasShadow="True" BorderColor="White">
                         <Entry Placeholder="USER" Margin="20,0,0,0" VerticalOptions="Center" Keyboard="Text" CharacterSpacing="4"></Entry>

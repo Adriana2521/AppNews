@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNews.Views.Administrador.PrincipalViewAD"
+             Title="PrincipalViewAD">
+
+
+
+    <Grid BackgroundColor="#2d5e4c">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="AUTO"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Margin="30" TextColor="White" CharacterSpacing="5" FontFamily="NewsFont" FontSize="30" >ULTIMAS NOTICIAS</Label>
+
+        <Border Grid.Row="1" Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                   
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="2"
+                        CornerRadius="0"
+                        Background="WHITESMOKE" 
+                        BorderColor="Black"  
+                        BorderWidth="2" 
+                        Text="AGREGAR NOTICIA"
+                        TextColor="Black"
+                        CharacterSpacing="2"
+                         FontFamily="NewsFont">
+                    
+                </Button>
+                <Button CornerRadius="0"
+                        Background="WHITESMOKE"
+                        BorderColor="Black"
+                        BorderWidth="2"
+                        TextColor="Black"
+                        Text="REGRESAR"
+                        CharacterSpacing="2"
+                        FontFamily="NewsFont">
+                    
+                </Button>
+                
+            </Grid>
+        </Border>
+        
+        
+        <ScrollView Grid.Row="2" >
+
+            <Border Margin="10" BackgroundColor="White" StrokeThickness="0" Background="transparent" >
+                <StackLayout Orientation="Horizontal">
+                    <Frame HeightRequest="120" WidthRequest="120">
+                        <Image Source="/Resources/Images/nota.jpg" Aspect="Fill" HeightRequest="120" WidthRequest="120" ></Image>
+                    </Frame>
+                    <Frame WidthRequest="265" BackgroundColor="Transparent" BorderColor="Transparent">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Label  TextColor="White" FontFamily="NewsFont" FontSize="20">ELECIONES ELECTORALES EN COAHUILA 2023</Label>
+                            <Label Grid.Row="1" TextColor="White">El domingo 4 de junio se llevaron a cabo las elecciones Coahuila 2023</Label>
+
+
+
+                        </Grid>
+                    </Frame> 
+                    
+                    
+                </StackLayout>
+
+            </Border>
+
+        </ScrollView>
+
+        
+
+
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ContentPage>

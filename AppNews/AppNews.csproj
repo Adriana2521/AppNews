@@ -53,6 +53,7 @@
 	  <None Remove="Resources\Images\login.png" />
 	  <None Remove="Resources\Images\nota.jpg" />
 	  <None Remove="Resources\Images\noticias.png" />
+	  <None Remove="Resources\Images\porfile.png" />
 	  <None Remove="Resources\Images\usuario.png" />
 	</ItemGroup>
 
@@ -67,12 +68,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\Administrador\AgregarNoticiaView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Administrador\PrincipalViewAD.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PrincipalView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Views\Usuarios\" />
 	</ItemGroup>
 
 </Project>
