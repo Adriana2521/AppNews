@@ -21,7 +21,7 @@
                    FontFamily="NewsFont"
                    CharacterSpacing="3"
                    TextColor="White"
-                   >AGREGAR NOTICIA</Label>
+                   >EDITAR NOTICIA</Label>
         </Border>
 
         <Border Grid.Row="1" Margin="0,30,0,0" StrokeThickness="0">
@@ -36,8 +36,10 @@
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="AUTO"></RowDefinition>
-                    <RowDefinition ></RowDefinition>
-                    
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                    <RowDefinition Height="AUTO"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+
                 </Grid.RowDefinitions>
 
                 <Label CharacterSpacing="3"
@@ -50,7 +52,7 @@
                         <Shadow Offset="10,10"
                                 Opacity="0.7"></Shadow>
                     </Border.Shadow>
-                    
+
                     <Entry Margin="0,0,0,-7" HorizontalTextAlignment="Start" ></Entry>
                 </Border>
 
@@ -95,14 +97,32 @@
 
                     <Border.Shadow>
                         <Shadow Offset="10,10"
-                                Opacity="0.8"></Shadow>
+                                Opacity="0.7"></Shadow>
                     </Border.Shadow>
                     <Editor Margin="0,0,0,-10" HeightRequest="50"></Editor>
-                    
+
                 </Border>
 
+                <Label CharacterSpacing="3"
+                       Margin="15"
+                       
+                       Grid.Row="8"
+                >URL</Label>
+
+                <Border Grid.Row="9" StrokeShape="RoundRectangle 30" >
+
+                    <Border.Shadow>
+                        <Shadow Offset="10,10"
+                                Opacity="0.7"></Shadow>
+                    </Border.Shadow>
+
+                    <Entry Margin="0,0,0,-7"></Entry>
+                </Border>
+
+
+
             </Grid>
-            
+
         </Border>
 
 
@@ -138,24 +158,25 @@
 
             </Grid>
         </Border>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </Grid>
-    
-    
+
+
+
 </ContentPage>
