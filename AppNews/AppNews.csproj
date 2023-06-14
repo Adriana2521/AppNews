@@ -71,6 +71,9 @@
 	  <MauiXaml Update="Views\Administrador\AgregarNoticiaView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Administrador\EditarNoticiaView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Administrador\PrincipalViewAD.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -80,10 +83,9 @@
 	  <MauiXaml Update="Views\PrincipalView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Views\Usuarios\" />
+	  <MauiXaml Update="Views\Usuarios\NoticiasView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
