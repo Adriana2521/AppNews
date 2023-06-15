@@ -4,10 +4,33 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppNews"
+    xmlns:admin="clr-namespace:AppNews.Views.Administrador"
+    xmlns:user="clr-namespace:AppNews.Views.Usuarios"
+    xmlns:views="clr-namespace:AppNews.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent Title="Home">
-        
+    <ShellContent 
+        ContentTemplate="{DataTemplate views:LoginView}"
+        Route="InicioUsuario"
+    />
+
+    <ShellContent Route="principal">
+        <views:PrincipalView></views:PrincipalView>
     </ShellContent>
 
+    <ShellContent Route="addnoticia">
+        <admin:AgregarNoticiaView></admin:AgregarNoticiaView>
+    </ShellContent>
+    
+    <ShellContent Route="editnoticia">
+        <admin:EditarNoticiaView></admin:EditarNoticiaView>
+    </ShellContent>
+    
+    <ShellContent Route="principaladmin">
+        <admin:PrincipalViewAD></admin:PrincipalViewAD>
+    </ShellContent>
+
+    <ShellContent Route="userview">
+        <user:NoticiasView></user:NoticiasView>
+    </ShellContent>
 </Shell>
