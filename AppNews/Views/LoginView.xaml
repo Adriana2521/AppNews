@@ -4,22 +4,15 @@
              x:Class="AppNews.Views.LoginView"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="LoginView">
-
-
     <ContentPage.Behaviors>
         <toolkit:StatusBarBehavior StatusBarColor="Fuchsia" StatusBarStyle="LightContent" />
     </ContentPage.Behaviors>
-
-
     <Grid Background="#2d5e4c">
-
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition ></RowDefinition>
         </Grid.RowDefinitions>
-
         <Image Source="/Resources/Images/noticias.png" HeightRequest="130" Margin="50" WidthRequest="120"></Image>
-
         <Frame Grid.Row="1" CornerRadius="30" Opacity="3" >
             <Grid>
                 <Grid.RowDefinitions>
@@ -33,11 +26,8 @@
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-
                 <Label HorizontalTextAlignment="Center" CharacterSpacing="5" FontSize="25" FontFamily="NewsFont" >WELCOME</Label>
-
                 <Label Grid.Row="1" HorizontalTextAlignment="Center" Margin="10" FontSize="15" CharacterSpacing="5">Login</Label>
-
                 <StackLayout Grid.Row="3" Orientation="Horizontal" >
                     <Frame ZIndex="1" HasShadow="True" HeightRequest="55" WidthRequest="55" CornerRadius="26" BackgroundColor="#2d5e4c"  >
                         <Image Source="/Resources/Images/porfile.png" HeightRequest="73" WidthRequest="53"></Image>
@@ -46,7 +36,6 @@
                         <Entry Placeholder="USER" Margin="20,0,0,0" VerticalOptions="Center" Keyboard="Text" CharacterSpacing="4"></Entry>
                     </Frame>
                 </StackLayout>
-
                 <StackLayout Grid.Row="5" Orientation="Horizontal">
                     <Frame ZIndex="1" HasShadow="True" HeightRequest="55" WidthRequest="56" CornerRadius="26"  >
                         <Image Source="/Resources/Images/login.png" HeightRequest="70" WidthRequest="53"></Image>
@@ -55,45 +44,8 @@
                         <Entry Placeholder="PASSWORD" Margin="20,0,0,0" VerticalOptions="Center" Keyboard="Text" CharacterSpacing="4" IsPassword="True"></Entry>
                     </Frame>
                 </StackLayout>
-
                 <Button Grid.Row="7" BackgroundColor="#2d5e4c" CornerRadius="20" Text="LOGIN" CharacterSpacing="6"></Button>
-
-
-
-
             </Grid>
         </Frame>
-
-
-
-
     </Grid>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </ContentPage>
