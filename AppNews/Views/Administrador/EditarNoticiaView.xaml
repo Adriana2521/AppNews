@@ -8,14 +8,12 @@
         <toolkit:StatusBarBehavior StatusBarColor="Black" StatusBarStyle="LightContent" />
     </ContentPage.Behaviors>
     <Grid >
-
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-
         <Border BackgroundColor="#2d5e4c" Margin="-10,-10,-10,0" StrokeShape="RoundRectangle 30" >
             <Label Margin="40"
                    FontSize="27"
@@ -24,11 +22,8 @@
                    TextColor="White"
                    >EDITAR NOTICIA</Label>
         </Border>
-
         <Border Grid.Row="1" Margin="0,30,0,0" StrokeThickness="0">
-
             <Grid>
-
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="auto"></RowDefinition>
@@ -38,83 +33,58 @@
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="AUTO"></RowDefinition>
                     <RowDefinition ></RowDefinition>
-
                 </Grid.RowDefinitions>
-
                 <Label CharacterSpacing="3"
                        Margin="15"
                 >TITULO</Label>
-
                 <Border Grid.Row="1" StrokeShape="RoundRectangle 30" >
-
                     <Border.Shadow>
                         <Shadow Offset="10,10"
                                 Opacity="0.7"></Shadow>
                     </Border.Shadow>
-
                     <Entry Margin="0,0,0,-7" HorizontalTextAlignment="Start" ></Entry>
                 </Border>
-
                 <Label CharacterSpacing="3"
-                       Margin="15"
-                       
+                       Margin="15" 
                        Grid.Row="2"
                 >AUTOR</Label>
-
                 <Border Grid.Row="3" StrokeShape="RoundRectangle 30" >
-
                     <Border.Shadow>
                         <Shadow Offset="10,10"
                                 Opacity="0.7"></Shadow>
                     </Border.Shadow>
-
                     <Entry Margin="0,0,0,-7" HorizontalTextAlignment="Start" ></Entry>
                 </Border>
                 <Label CharacterSpacing="3"
                        Margin="15"
-                       
                        Grid.Row="4"
                 >FECHA</Label>
-
                 <Border Grid.Row="5" StrokeShape="RoundRectangle 30" >
-
                     <Border.Shadow>
                         <Shadow Offset="10,10"
                                 Opacity="0.7"></Shadow>
                     </Border.Shadow>
-
                     <DatePicker Margin="0,0,0,-7"></DatePicker>
                 </Border>
-
                 <Label CharacterSpacing="3"
                        Margin="15"
-                       
                        Grid.Row="6"
                 >DESCRIPCION</Label>
-
                 <Border Grid.Row="7" StrokeShape="RoundRectangle 30" >
-
                     <Border.Shadow>
                         <Shadow Offset="10,10"
                                 Opacity="0.8"></Shadow>
                     </Border.Shadow>
                     <Editor Margin="0,0,0,-10" HeightRequest="50"></Editor>
-
                 </Border>
-
             </Grid>
-
         </Border>
-
-
         <Border Grid.Row="4" Background="#2d5e4c" StrokeShape="RoundRectangle 40" Margin="-10,0,-10,-10" >
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-
-
                 <Button Margin="30" HeightRequest="50" 
                         Text="CANCELAR"
                         CornerRadius="26" 
@@ -123,8 +93,6 @@
                         TextColor="Black"
                         FontFamily="NewsFont"
                         ></Button>
-
-
                 <Button Margin="30" HeightRequest="50" 
                         Text="AGREGAR"
                         CornerRadius="26" 
@@ -134,56 +102,7 @@
                         FontFamily="NewsFont"
                         Grid.Column="1"
                         ></Button>
-
-
-
             </Grid>
         </Border>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </Grid>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </ContentPage>
