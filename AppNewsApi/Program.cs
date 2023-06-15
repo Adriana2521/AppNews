@@ -11,7 +11,7 @@ builder.Services.AddDbContext<Sistem21NoticiasdbContext>(x => x.UseMySql(conexio
 builder.Services.AddControllers();
 string Issuer = "docentes.itesrc.net";
 string Audiance = "mauidocentes";
-var Secret = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("NoticiasKeyMoviles83G"));
+var Secret = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("DocentesKeyMoviles83GRegusProyect"));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer
 (

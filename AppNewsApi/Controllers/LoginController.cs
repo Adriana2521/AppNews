@@ -43,7 +43,7 @@ namespace AppNewsApi.Controllers
                     Audience = "mauidocentes",
                     IssuedAt = DateTime.UtcNow,
                     Expires = DateTime.UtcNow.AddHours(4),
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("NoticiasKeyMoviles83G")),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("DocentesKeyMoviles83GRegusProyect")),
                     SecurityAlgorithms.HmacSha256),
                     Subject = new ClaimsIdentity(claims, JwtBearerDefaults.AuthenticationScheme)
                 };
