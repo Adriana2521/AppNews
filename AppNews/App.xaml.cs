@@ -15,6 +15,6 @@ public partial class App : Application
         Routing.RegisterRoute("//editnoticia", typeof(EditarNoticiaView));
         Routing.RegisterRoute("//userview", typeof(NoticiasView));
 		#endregion
-		MainPage = new NoticiasView();
+		MainPage = new AppShell();
 	}
 }

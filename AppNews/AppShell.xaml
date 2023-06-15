@@ -17,6 +17,9 @@
     <ShellContent Route="principal">
         <views:PrincipalView></views:PrincipalView>
     </ShellContent>
+    <ShellContent Route="login">
+        <views:LoginView></views:LoginView>
+    </ShellContent>
 
     <ShellContent Route="addnoticia">
         <admin:AgregarNoticiaView></admin:AgregarNoticiaView>
@@ -33,4 +36,7 @@
     <ShellContent Route="userview">
         <user:NoticiasView></user:NoticiasView>
     </ShellContent>
+
+    
+
 </Shell>
