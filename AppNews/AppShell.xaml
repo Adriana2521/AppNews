@@ -6,9 +6,8 @@
     xmlns:local="clr-namespace:AppNews"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:AppShell}"
-        Route="MainPage" />
+    <ShellContent Title="Home">
+        <
+    </ShellContent>
 
 </Shell>
